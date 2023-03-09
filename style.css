@@ -1,0 +1,247 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-color: rgba(18, 23, 37, 1);
+    display: flex;
+    flex-direction: column;
+    background-image: url(assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    align-items: center;
+	line-height: 1;
+    background-blend-mode: multiply;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+#logo{
+    margin-top: 62px;
+    margin-bottom: 57px;
+    width: 135px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    width: 327px;
+    color: rgba(84, 230, 175, 1);
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 38px;
+    /* or 146% */
+
+    text-align: center;
+    text-transform: uppercase;
+}
+span{
+    color: rgba(255, 255, 255, 1);
+}
+p{
+    width: 327px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+
+    text-align: center;
+
+    color: #C2CBE5;
+}
+.comunity{
+    width: 327px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comunity img{
+    width: 20%;
+}
+.btn-inpt{
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;    
+}
+input{
+    padding-left: 32px;
+    background: #2C344B;
+    border-radius: 28px;
+    border: 0;
+    width: 295px;
+    height: 46px;
+    margin-bottom: 16px;
+    outline: inherit;  
+    color: white; 
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+}
+
+button{
+    background: #54E6AF;
+    box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.497913);
+    border-radius: 28px;
+    border: 0;
+    width: 327px;
+    height: 46px;
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+
+
+    color: #121725;;
+}
+::placeholder{
+    font-family: 'Chivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+}
+
+@media (min-width: 768px){
+    body{
+        background-image: url(assets/tablet/image-host.jpg), url(assets/desktop/bg-pattern-dots.svg);
+        background-position: right top , left 40px bottom;
+        background-size: 491px 767px, 232px 104px;
+        background-blend-mode: inherit;
+        align-items: start;
+        padding-left: 40px;       
+
+    }   
+    #logo{
+        margin-bottom: 152px;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        background: #121725;
+        width: 635px;
+        align-items: start;
+    }
+    h1{
+        margin-top: 93px;
+        width: 635px;
+        text-align: left;
+        font-size: 48px;
+        line-height: 56px;
+    }
+    p{
+        width: 445px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-align: left;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .btn{
+        order: 2;
+        height: 84px;
+        margin-bottom: 66px;
+    }
+    .btn-inpt{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: #2C344B;
+        border-radius: 28px;  
+        width: 52px;
+        border: 4px solid #2C344B;  
+        width: 427px;  
+    }
+    input{
+        width: auto;
+        height: auto;
+        margin-bottom: 0;
+    }
+    button{
+        width: 162px;
+    }
+    .comunity{
+        order: 3;
+        width: 535px;
+    }
+    .comunity img{
+        width: 20%;
+    }
+    
+}
+
+@media (min-width:1440px){
+    body{
+        background-image:url(assets/desktop/bg-pattern-dots.svg),url(assets/desktop/image-host.jpg) ;
+        background-position: right bottom 78px, right top 130px;
+        background-size: 232px 104px, 962px 640px;
+        padding-left: 165px;
+    }
+    #logo{
+        margin-bottom: 103px;
+    }
+    .main-container{
+        width: 723px;
+    }
+    .btn{
+        margin-bottom: 66px;
+    }
+}
